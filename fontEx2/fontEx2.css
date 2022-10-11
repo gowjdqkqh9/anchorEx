@@ -1,0 +1,56 @@
+@charset "utf-8";
+h1 {
+   background-color: black;
+   color:aliceblue;
+   text-align: center;
+}
+#text1 {
+   color:brown;
+   text-decoration:underline;
+   font-size: 13px;
+   text-align: center;
+}
+#img1 {
+   text-align: center;
+}
+#text2 {
+   text-align: center;
+}
+#text3 {
+   color:red;
+   font-size:13px;
+   text-align: center;
+}
+#title2 {
+   text-align: center;
+}
+#title3 {
+   color:teal;
+   text-decoration: underline;
+   text-align: center;
+}
+#title4 {
+   background-color: teal;
+   color:aliceblue;
+   text-align: right;
+}
+#title5 {
+   background-color: teal;
+   color:aliceblue;
+   text-align: right;
+}
+li {
+   text-align: left;
+}
+#season1 {
+   background-color: orange;
+}
+#season3 {
+   background-color: orange;
+}
+img {
+   text-align: left;
+}
+dt {
+   font-weight: bold;
+}
