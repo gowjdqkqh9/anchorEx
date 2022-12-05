@@ -1,0 +1,357 @@
+@charset "UTF-8";
+/* 공통 */
+html {
+  text-align: center;
+  scroll-behavior: smooth;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+html h2 {
+  font-size: 56px;
+  font-weight: 300;
+}
+html h3 {
+  font-size: 48px;
+  font-weight: 400;
+}
+html h4 {
+  font-size: 40px;
+  font-weight: 400;
+}
+html h5 {
+  font-size: 23px;
+  font-weight: 400;
+}
+html h6 {
+  font-size: 16px;
+  font-weight: 500;
+}
+html .sub_title {
+  font-size: 15px;
+  font-weight: 300;
+  color: rgb(129, 132, 145);
+}
+
+/*********** nav ***********/
+nav {
+  width: 100%;
+  height: 85px;
+  padding: 0 2vw;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+}
+nav h1 a img {
+  height: 53px;
+}
+nav #gnb {
+  height: 100%;
+  text-align: center;
+  display: flex;
+}
+nav #gnb li {
+  width: 8.4vw;
+}
+nav #gnb li a {
+  padding: 30px;
+  line-height: 85px;
+  font-size: 18px;
+  font-weight: 400;
+}
+nav #gnb li .sub_menu {
+  width: 100vw;
+  height: 250px;
+  padding: 0 0 40%;
+  background-color: #fff;
+}
+nav #gnb li .sub_menu li {
+  overflow: hidden;
+}
+nav #gnb li .sub_menu li a {
+  font-size: 15px;
+  font-weight: 300;
+  padding: 10px 20px;
+}
+nav #gnb li:hover {
+  border-bottom: 3px solid #C78665;
+}
+nav #gnb li:hover .sub_menu {
+  display: block;
+}
+nav #gnb li:hover .sub_menu li {
+  border-bottom: none;
+}
+nav #gnb li:hover .sub_menu li a {
+  color: #000;
+}
+nav #gnb li:hover .sub_menu li a:hover {
+  color: #C78665;
+  background-color: #f8f9fa;
+}
+nav #register {
+  display: flex;
+}
+nav #register li {
+  text-transform: uppercase;
+  padding-left: 15px;
+}
+nav #register li a {
+  padding: 0 8px;
+}
+nav #register li a:hover {
+  color: #C78665;
+}
+
+/*********** header ***********/
+header {
+  width: 100%;
+  height: 1000px;
+  overflow: hidden;
+  margin-top: 80px;
+}
+header .bg .img {
+  width: 100%;
+  height: 1000px;
+  background: url(./images/hero01.png) no-repeat 50%/cover;
+  display: grid;
+  place-items: center;
+}
+header .bg .img h2 {
+  color: #fff;
+}
+/*********** main ***********/
+main #info {
+  padding: 120px 0;
+  margin: 0 9vw;
+}
+main #info .txt h4 {
+  margin-bottom: 8px;
+}
+main #info .txt p {
+  margin-bottom: 16px;
+}
+main #info .icon {
+  display: grid;
+  grid-template: repeat(2, 1fr)/repeat(4, 1fr);
+}
+main #moreView {
+  display: flex;
+}
+main #moreView .img {
+  width: 48%;
+  padding: 0 15px;
+}
+main #moreView .txt {
+  width: 52%;
+  padding: 48px 15px;
+}
+main #moreView .txt .sub_title {
+  margin-bottom: 16px;
+}
+main #moreView .txt a {
+  font-size: 16px;
+  font-weight: 400;
+  border: 1px solid #000;
+  padding: 15px 45px;
+  margin-top: 16px;
+}
+main #moreView .txt a:hover {
+  background-color: #000;
+  color: #fff;
+}
+main #playVideo {
+  display: flex;
+}
+main #playVideo .txt {
+  width: 52%;
+  padding: 48px 15px;
+}
+main #playVideo .txt h3 {
+  margin-bottom: 40px;
+}
+main #playVideo .txt .sub_title {
+  margin-bottom: 16px;
+}
+main #playVideo .txt a {
+  font-size: 16px;
+  font-weight: 400;
+  border: 1px solid #000;
+  padding: 15px 45px;
+  margin-top: 16px;
+}
+main #playVideo .txt a:hover {
+  background-color: #000;
+  color: #fff;
+}
+main #playVideo .img {
+  width: 48%;
+  padding: 0 15px;
+}
+main #bg_blue1 {
+  padding: 120px 0;
+  background-color: rgb(234, 241, 244);
+}
+main #bg_blue1 img {
+  height: 700px;
+  margin: 0 0.8vw;
+}
+main #bg_blue2 {
+  background-color: rgb(234, 241, 244);
+}
+main #bg_blue2 .txt {
+  padding-bottom: 120px;
+}
+main #bg_blue2 .txt h3 {
+  font-size: 36px;
+  padding-bottom: 16px;
+}
+main #bg_blue2 .txt .sub_title {
+  padding-bottom: 16px;
+}
+main #bg_blue2 .img {
+  display: flex;
+  padding: 0 15px 120px;
+}
+main #bg_blue2 .img .box {
+  position: relative;
+}
+main #bg_blue2 .img .box .txt {
+  width: 90%;
+  background-color: #fff;
+  padding: 20px;
+  text-align: left;
+  position: absolute;
+  bottom: -30px;
+}
+main #bg_blue2 .img .box .txt h5 {
+  font-weight: 400;
+  margin-bottom: 8px;
+}
+main #bg_blue2 .img .box .txt .sub_title {
+  padding: 0;
+}
+main #board {
+  padding: 120px 15px;
+}
+main #board .title {
+  margin-bottom: 48px;
+}
+main #board .title h4 {
+  margin-bottom: 8px;
+}
+main #board .title .sub_title {
+  margin-bottom: 16px;
+}
+main #board .notice {
+  display: flex;
+}
+main #board .notice h5 {
+  width: 25%;
+  text-align: left;
+  margin-right: 15px;
+}
+main #board .notice ul {
+  width: 75%;
+  margin-left: 15px;
+}
+main #board .notice ul li {
+  text-align: left;
+  border-top: 1px solid #ddd;
+  padding: 12px;
+}
+main #board .gallery {
+  margin-top: 48px;
+  display: flex;
+}
+main #board .gallery h5 {
+  width: 25%;
+  text-align: left;
+}
+main #board .gallery .img {
+  width: 75%;
+  margin-left: 15px;
+  display: flex;
+}
+main #board .gallery .img .box {
+  padding: 4px;
+  text-align: left;
+}
+main #map {
+  height: 500px;
+  background-color: #ddd;
+}
+main #contact {
+  padding: 120px 0;
+  background-color: rgb(248, 248, 248);
+  display: flex;
+}
+main #contact .txt {
+  width: 82%;
+  padding: 0 15px;
+  text-align: left;
+}
+main #contact .txt h4 {
+  margin-bottom: 8px;
+}
+main #contact .txt .sub_title {
+  margin-bottom: 48px;
+}
+main #contact .txt p {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 30px;
+  margin-bottom: 16px;
+}
+main #contact .btn {
+  width: 18%;
+  padding: 0 15px;
+  text-align: left;
+}
+main #contact .btn a {
+  font-size: 16px;
+  font-weight: 400;
+  border: 1px solid #000;
+  padding: 15px 45px;
+  margin-top: 16px;
+}
+main #contact .btn a:hover {
+  background-color: #000;
+  color: #fff;
+}
+main #partner {
+  padding: 120px 0;
+}
+main #partner .txt {
+  margin-bottom: 48px;
+}
+main #partner .txt h4 {
+  margin-bottom: 8px;
+}
+main #partner .txt .sub_title {
+  margin-bottom: 16px;
+}
+main #partner .box ul {
+  padding: 0 15px;
+  display: grid;
+  grid-template: repeat(2, 1fr)/repeat(4, 1fr);
+}
+main #partner .box ul li {
+  border: 1px solid #ddd;
+}
+main #partner .box ul li:hover a img {
+  filter: opacity(0.4);
+}
+
+/*********** footer ***********/
+footer {
+  font-size: 14px;
+  font-weight: 300;
+  padding: 40px 0;
+  background-color: rgb(244, 248, 249);
+  color: rgb(129, 132, 145);
+}
+footer a {
+  color: rgb(27, 29, 31);
+}/*# sourceMappingURL=style.css.map */
