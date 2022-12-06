@@ -6,26 +6,32 @@ html {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 html h2 {
+  font-family: "Iropke Batang", serif;
   font-size: 56px;
   font-weight: 300;
 }
 html h3 {
+  font-family: "Iropke Batang", serif;
   font-size: 48px;
   font-weight: 400;
 }
 html h4 {
+  font-family: "Iropke Batang", serif;
   font-size: 40px;
   font-weight: 400;
 }
 html h5 {
+  font-family: "Noto Sans KR", "Noto Sans", "Roboto", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   font-size: 23px;
   font-weight: 400;
 }
 html h6 {
+  font-family: "Open Sans", sans-serif;
   font-size: 16px;
   font-weight: 500;
 }
 html .sub_title {
+  font-family: "Noto Sans KR", "Noto Sans", "Roboto", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   font-size: 15px;
   font-weight: 300;
   color: rgb(129, 132, 145);
@@ -33,6 +39,7 @@ html .sub_title {
 
 /*********** nav ***********/
 nav {
+  font-family: "Noto Sans KR", "Noto Sans", "Roboto", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   width: 100%;
   height: 85px;
   padding: 0 2vw;
@@ -52,43 +59,46 @@ nav #gnb {
   display: flex;
 }
 nav #gnb li {
-  width: 8.4vw;
+  min-width: 100px;
+  width: 11vw;
 }
 nav #gnb li a {
-  padding: 30px;
-  line-height: 85px;
+  display: block;
   font-size: 18px;
   font-weight: 400;
+  line-height: 85px;
 }
 nav #gnb li .sub_menu {
-  width: 100vw;
-  height: 250px;
-  padding: 0 0 40%;
-  background-color: #fff;
+  display: none;
+  transition: 0.3s;
 }
 nav #gnb li .sub_menu li {
-  overflow: hidden;
-}
-nav #gnb li .sub_menu li a {
-  font-size: 15px;
-  font-weight: 300;
-  padding: 10px 20px;
-}
-nav #gnb li:hover {
-  border-bottom: 3px solid #C78665;
-}
-nav #gnb li:hover .sub_menu {
-  display: block;
-}
-nav #gnb li:hover .sub_menu li {
   border-bottom: none;
 }
-nav #gnb li:hover .sub_menu li a {
+nav #gnb li .sub_menu li a {
+  display: block;
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 15px;
+  font-weight: 300;
+  height: 40px;
+  line-height: 40px;
   color: #000;
 }
-nav #gnb li:hover .sub_menu li a:hover {
-  color: #C78665;
+nav #gnb li .sub_menu li a:hover {
+  color: #c78665;
   background-color: #f8f9fa;
+}
+nav #gnb:hover li {
+  border-bottom: 3px solid #c78665;
+}
+nav #gnb:hover li .sub_menu {
+  display: block;
+  width: 100vw;
+  height: 250px;
+  padding-top: 10px;
+  text-transform: uppercase;
+  background-color: #fff;
 }
 nav #register {
   display: flex;
@@ -101,7 +111,7 @@ nav #register li a {
   padding: 0 8px;
 }
 nav #register li a:hover {
-  color: #C78665;
+  color: #c78665;
 }
 
 /*********** header ***********/
@@ -119,6 +129,7 @@ header .bg .img {
   place-items: center;
 }
 header .bg .img h2 {
+  font-family: "Iropke Batang", serif;
   color: #fff;
 }
 /*********** main ***********/
@@ -147,15 +158,20 @@ main #moreView .txt {
   width: 52%;
   padding: 48px 15px;
 }
+main #moreView .txt h3 {
+  margin-bottom: 40px;
+}
 main #moreView .txt .sub_title {
   margin-bottom: 16px;
 }
 main #moreView .txt a {
+  width: 170px;
+  display: block;
   font-size: 16px;
   font-weight: 400;
   border: 1px solid #000;
-  padding: 15px 45px;
-  margin-top: 16px;
+  padding: 15px 0;
+  margin: 0 auto;
 }
 main #moreView .txt a:hover {
   background-color: #000;
@@ -175,11 +191,13 @@ main #playVideo .txt .sub_title {
   margin-bottom: 16px;
 }
 main #playVideo .txt a {
+  width: 170px;
+  display: block;
   font-size: 16px;
   font-weight: 400;
   border: 1px solid #000;
-  padding: 15px 45px;
-  margin-top: 16px;
+  padding: 15px 0;
+  margin: 0 auto;
 }
 main #playVideo .txt a:hover {
   background-color: #000;
@@ -208,7 +226,7 @@ main #bg_blue2 .txt h3 {
   padding-bottom: 16px;
 }
 main #bg_blue2 .txt .sub_title {
-  padding-bottom: 16px;
+  margin-bottom: 16px;
 }
 main #bg_blue2 .img {
   display: flex;
@@ -257,6 +275,8 @@ main #board .notice ul {
   margin-left: 15px;
 }
 main #board .notice ul li {
+  font-family: "Noto Sans KR", "Noto Sans", "Roboto", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-size: 16px;
   text-align: left;
   border-top: 1px solid #ddd;
   padding: 12px;
@@ -354,4 +374,4 @@ footer {
 }
 footer a {
   color: rgb(27, 29, 31);
-}/*# sourceMappingURL=style.css.map */
+}
