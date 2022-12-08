@@ -60,6 +60,7 @@ nav #gnb {
 }
 nav #gnb li {
   min-width: 100px;
+  max-width: 160px;
   width: 11vw;
 }
 nav #gnb li a {
@@ -154,6 +155,20 @@ main #info .txt p {
 main #info .icon {
   display: grid;
   grid-template: repeat(2, 1fr)/repeat(4, 1fr);
+  padding-bottom: 40px;
+}
+main #info .icon li {
+  width: 100%;
+  padding: 60px 0;
+  margin: 0 auto;
+  border-bottom: 1px solid #e0e3e7;
+  border-right: 1px solid #e0e3e7;
+}
+main #info .icon li span {
+  font-size: 4.5vw;
+}
+main #info .icon li h6 {
+  margin-top: 40px;
 }
 main #moreView {
   display: flex;
@@ -173,6 +188,7 @@ main #moreView .txt .sub_title {
   margin-bottom: 16px;
 }
 main #moreView .txt a {
+  font-family: "Noto Sans KR", "Noto Sans", "Roboto", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   width: 170px;
   display: block;
   font-size: 16px;
@@ -184,7 +200,7 @@ main #moreView .txt a {
   justify-content: center;
 }
 main #moreView .txt a span {
-  opacity: 0;
+  display: none;
   transition: 0.3s;
 }
 main #moreView .txt a:hover {
@@ -192,8 +208,8 @@ main #moreView .txt a:hover {
   color: #fff;
 }
 main #moreView .txt a:hover span {
-  opacity: 1;
-  margin-left: 15px;
+  display: block;
+  margin-left: 10px;
 }
 main #playVideo {
   display: flex;
@@ -209,8 +225,8 @@ main #playVideo .txt .sub_title {
   margin-bottom: 16px;
 }
 main #playVideo .txt a {
+  font-family: "Noto Sans KR", "Noto Sans", "Roboto", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   width: 170px;
-  display: block;
   font-size: 16px;
   font-weight: 400;
   border: 1px solid #000;
@@ -220,7 +236,7 @@ main #playVideo .txt a {
   justify-content: center;
 }
 main #playVideo .txt a span {
-  opacity: 0;
+  display: none;
   transition: 0.3s;
 }
 main #playVideo .txt a:hover {
@@ -228,8 +244,8 @@ main #playVideo .txt a:hover {
   color: #fff;
 }
 main #playVideo .txt a:hover span {
-  opacity: 1;
-  margin-left: 15px;
+  display: block;
+  margin-left: 10px;
 }
 main #playVideo .img {
   width: 48%;
@@ -239,9 +255,36 @@ main #bg_blue1 {
   padding: 120px 0;
   background-color: rgb(234, 241, 244);
 }
-main #bg_blue1 img {
+main #bg_blue1 .imgBox {
+  background: url(./images/01.png) no-repeat 50%/cover;
+  width: 80vw;
   height: 700px;
-  margin: 0 0.8vw;
+  margin: 0 auto;
+  display: grid;
+  grid-template: repeat(3, 1fr)/repeat(3, 1fr);
+}
+main #bg_blue1 .imgBox p {
+  font-size: 45px;
+  font-weight: 700;
+  color: #fff;
+  grid-column: 2/3;
+  grid-row: 2/3;
+  align-items: center;
+}
+main #bg_blue1 .imgBox .arrow {
+  grid-column: 1/4;
+  grid-row: 2/3;
+  justify-content: space-between;
+  align-items: center;
+}
+main #bg_blue1 .imgBox .arrow span {
+  font-size: 50px;
+  color: #fff;
+}
+main #bg_blue1 .imgBox .btn_bgBlue1 {
+  grid-column: 2/3;
+  grid-row: 3/4;
+  align-items: flex-end;
 }
 main #bg_blue2 {
   background-color: rgb(234, 241, 244);
@@ -366,16 +409,18 @@ main #contact .btn {
   text-align: left;
 }
 main #contact .btn a {
+  font-family: "Noto Sans KR", "Noto Sans", "Roboto", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  width: 170px;
   font-size: 16px;
   font-weight: 400;
   border: 1px solid #000;
-  padding: 15px 45px;
+  padding: 15px 0;
   margin-top: 16px;
   display: flex;
   justify-content: center;
 }
 main #contact .btn a span {
-  opacity: 0;
+  display: none;
   transition: 0.3s;
 }
 main #contact .btn a:hover {
@@ -383,7 +428,8 @@ main #contact .btn a:hover {
   color: #fff;
 }
 main #contact .btn a:hover span {
-  opacity: 1;
+  display: block;
+  padding-left: 10px;
 }
 main #client {
   padding: 120px 0;

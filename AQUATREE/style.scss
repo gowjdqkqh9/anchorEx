@@ -69,13 +69,13 @@ nav {
       }
     }
   }
-
   #gnb {
     height: 100%;
     text-align: center;
     display: flex;
     li {
       min-width: 100px;
+      max-width: 160px;
       width: 11vw;
       a {
         display: block;
@@ -187,10 +187,19 @@ main {
     .icon {
       display: grid;
       grid-template: repeat(2, 1fr) / repeat(4, 1fr);
+
+      padding-bottom: 40px;
       li {
-        i {
+        width: 100%;
+        padding: 60px 0;
+        margin: 0 auto;
+        border-bottom: 1px solid #e0e3e7;
+        border-right: 1px solid #e0e3e7;
+        span {
+          font-size: 4.5vw;
         }
-        h4 {
+        h6 {
+          margin-top: 40px;
         }
       }
     }
@@ -216,6 +225,9 @@ main {
         margin-bottom: 16px;
       }
       a {
+        font-family: "Noto Sans KR", "Noto Sans", "Roboto", -apple-system,
+          system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue",
+          Arial, sans-serif;
         width: 170px;
         display: block;
         font-size: 16px;
@@ -226,7 +238,7 @@ main {
         display: flex;
         justify-content: center;
         span {
-          opacity: 0;
+          display: none;
           transition: 0.3s;
         }
       }
@@ -234,8 +246,8 @@ main {
         background-color: #000;
         color: #fff;
         span {
-          opacity: 1;
-          margin-left: 15px;
+          display: block;
+          margin-left: 10px;
         }
       }
     }
@@ -253,8 +265,10 @@ main {
         margin-bottom: 16px;
       }
       a {
+        font-family: "Noto Sans KR", "Noto Sans", "Roboto", -apple-system,
+          system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue",
+          Arial, sans-serif;
         width: 170px;
-        display: block;
         font-size: 16px;
         font-weight: 400;
         border: 1px solid #000;
@@ -263,7 +277,7 @@ main {
         display: flex;
         justify-content: center;
         span {
-          opacity: 0;
+          display: none;
           transition: 0.3s;
         }
       }
@@ -271,8 +285,8 @@ main {
         background-color: #000;
         color: #fff;
         span {
-          opacity: 1;
-          margin-left: 15px;
+          display: block;
+          margin-left: 10px;
         }
       }
     }
@@ -285,14 +299,37 @@ main {
   #bg_blue1 {
     padding: 120px 0;
     background-color: rgb(234, 241, 244);
-    img {
+    .imgBox {
+      background: url(./images/01.png) no-repeat 50% / cover;
+      width: 80vw;
       height: 700px;
-      margin: 0 0.8vw;
-    }
-    .arrow {
-    }
-    .btn_bgBlue1 {
-      span {
+      margin: 0 auto;
+      display: grid;
+      grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+      p {
+        font-size: 45px;
+        font-weight: 700;
+        color: #fff;
+        grid-column: 2/3;
+        grid-row: 2/3;
+        align-items: center;
+      }
+      .arrow {
+        grid-column: 1/4;
+        grid-row: 2/3;
+        justify-content: space-between;
+        align-items: center;
+        span {
+          font-size: 50px;
+          color: #fff;
+        }
+      }
+      .btn_bgBlue1 {
+        grid-column: 2/3;
+        grid-row: 3/4;
+        align-items: flex-end;
+        span {
+        }
       }
     }
   }
@@ -425,15 +462,19 @@ main {
       padding: 0 15px;
       text-align: left;
       a {
+        font-family: "Noto Sans KR", "Noto Sans", "Roboto", -apple-system,
+          system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue",
+          Arial, sans-serif;
+        width: 170px;
         font-size: 16px;
         font-weight: 400;
         border: 1px solid #000;
-        padding: 15px 45px;
+        padding: 15px 0;
         margin-top: 16px;
         display: flex;
         justify-content: center;
         span {
-          opacity: 0;
+          display: none;
           transition: 0.3s;
         }
       }
@@ -441,7 +482,8 @@ main {
         background-color: #000;
         color: #fff;
         span {
-          opacity: 1;
+          display: block;
+          padding-left: 10px;
         }
       }
     }
